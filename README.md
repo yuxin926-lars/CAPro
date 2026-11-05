@@ -1,2 +1,4 @@
-# CAPro
-Correlation-Aware Prompt Learning for Multi-Label Fire Image Recognition with Vision-Language Models
+# Correlation-Aware Prompt Learning for Multi-Label Fire Image Recognition with Vision-Language Models
+Overview of the proposed CAPro framework for multi-label fire image recognition. The visual encoder extracts spatial image features, while the text encoder transforms the learnable correlation,positive, and negative prompts into category-specific text embeddings. The correlation embeddings guide class-conditioned spatial feature aggregation to generate class-specific visual representations. These representations are subsequently refined by the CCCE module, which propagates contextual information over a category graph through recurrent LSTM updates. The enhanced visual features are then compared with the positive and negative text embeddings to obtain category predictions. During training, the objective combines ASL with a prompt separation regularizer imposed on the positive and negative prompt embeddings.
+
+<img width="604" height="233" alt="屏幕截图 2026-11-05 202953" src="https://github.com/user-attachments/assets/6452d3b6-54a0-474e-b76a-962ab31f2928" />
